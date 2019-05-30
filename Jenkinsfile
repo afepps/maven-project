@@ -8,7 +8,8 @@ pipeline {
 
 
 	triggers {
-        githubPush()
+        githubPull(),
+		githubPush()
     }
 
     stages{

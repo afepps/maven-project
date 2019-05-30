@@ -8,7 +8,7 @@ pipeline {
 
 
 	triggers {
-        githubPull()
+        githubPullRequests(),
 		githubPush()
     }
 

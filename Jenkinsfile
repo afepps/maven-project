@@ -8,7 +8,7 @@ pipeline {
 
 
 	triggers {
-        githubPullRequests()
+        issueCommentTrigger('.*test this please.*')
     }
 
     stages{

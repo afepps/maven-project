@@ -8,8 +8,10 @@ pipeline {
 
 
 	triggers {
-        githubPullRequests {
-            cron('H/5 * * * *')
+        githubPullRequest {
+
+            useGitHubHooks()
+           
         }
     }
 

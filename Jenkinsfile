@@ -10,10 +10,6 @@ pipeline {
 	triggers {
         githubPullRequests (
             admin('user_1')
-            userWhitelist('you@you.com')
-            userWhitelist(['me@me.com', 'they@they.com'])
-            orgWhitelist('my_github_org')
-            orgWhitelist(['your_github_org', 'another_org'])
             cron('H/5 * * * *')
             triggerPhrase('OK to test')
             onlyTriggerPhrase()

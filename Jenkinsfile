@@ -8,11 +8,7 @@ pipeline {
 
 
 	triggers {
-        githubPullRequests (
-            triggerMode('Cron with Persisted Data')
-            triggerEvents('Pull Request Opened')
-            
-        )
+        githubPush ()
     }
 
     stages{

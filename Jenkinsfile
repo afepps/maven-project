@@ -10,7 +10,6 @@ pipeline {
 	triggers {
         githubPullRequests (
             admin('user_1')
-            admins(['user_2', 'user_3'])
             userWhitelist('you@you.com')
             userWhitelist(['me@me.com', 'they@they.com'])
             orgWhitelist('my_github_org')

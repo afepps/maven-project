@@ -10,7 +10,7 @@ pipeline {
 	triggers {
         githubPullRequests (
             triggerMode('Cron with Persisted Data')
-			SetStatusBeforeBuild()
+			setStatusBeforeBuild()
             triggerEvents('Pull Request Opened')
             
         )

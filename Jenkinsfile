@@ -6,8 +6,13 @@ pipeline {
         maven 'LocalMaven'
     }
 
+
 	triggers {
-        githubPush ()
+        githubPullRequests (
+            triggerMode('Cron with Persisted Data')
+            triggerEvents('Pull Request Opened')
+            
+        )
     }
 
     stages{

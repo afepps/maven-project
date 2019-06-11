@@ -8,11 +8,11 @@ pipeline {
 
 
 	triggers {
-        githubPullRequests {
+        githubPullRequests (
            
             useGitHubHooks()
             
-        }
+        )
     }
 
     stages{
